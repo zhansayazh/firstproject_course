@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Kanit:wght@500;600;700&display=swap');
 
+html {
+    display: flex;
+}
 body {
     margin:0px;
 }
@@ -59,7 +62,7 @@ body {
 }
 .ph1 {
     width: 619px;
-    height:420px;;
+    height:420px;
 }
 .section-title {
     font-family: 'Kanit', sans-serif;
@@ -197,4 +200,134 @@ body {
     margin-top:0px;
     margin-bottom: 30px;
     color: #081E34;
+}
+
+@media screen and (max-width: 320px){
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    .project {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    .section1, .section2-content, .section3-search,  .section4, .footer, .footer-buttons{
+        display: flex;
+        flex-direction: column;
+        column-gap: 20px;
+        
+    }
+    .header-button1 {
+        display: none;
+    }
+    .section1 {
+        width:100%;
+    }
+    .section2 {
+        
+        display: flex;
+        background-color: #E1DEE7;
+    }
+    .section2-content-title {
+        
+        width: 100%;
+    }
+    .section-p {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        text-align: center;
+    }
+    .section2-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header {
+        font-size: 2rem;
+    }
+    .header-logo {
+        width: 2rem;
+        height: 2rem;
+        margin-right: 20px;
+    }
+    .header-button2 {
+        width: 10rem;
+        font-size: 1.5rem;
+        height: 70px;
+        border-radius: 100px;
+    }
+    .header-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .section-title {
+        display: flex;
+        justify-content: center;
+        font-size: 4rem;
+        text-align: center;
+    }
+    .section3 {
+        display: flex;
+    }
+    .section3-search {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .section3-input {
+        display: flex;
+        height: 100px; 
+    }
+    .section3-input-img {
+        width: 48px;
+        height: 48px;
+        margin-left:30px;
+    }
+    .section3-input-text {
+        font-size: 2rem;
+    }
+    .section3-content-button {
+        width: 200px;
+        height: 80px;
+        font-size: 1.5rem;
+        margin-top: 50px;
+    }
+    .section1-button {
+        display: flex;
+        width: 250px;
+        height: 80px;
+        font-size: 1.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .section1-text, .section4-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ph1 {
+        margin-top: 100px;
+    }
+    .section4-button {
+        display: flex;
+        width: 200px;
+        height: 80px;
+        font-size: 1.5rem;
+    }
+    .upload-button {
+        width:40px;
+        height: 40px;
+    }
+    .footer-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+    }
 }
